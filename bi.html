@@ -22,6 +22,8 @@
           <li><a class="dropdown-item" href="admissions.html">Admissions</a></li>
           <li><a class="dropdown-item" href="#">School Calender</a></li>
           <li><a class="dropdown-item" href="#">Student Portal</a></li>
+          <li><a class="dropdown-item" href="#faqs">FAQs</a></li>
+
         </ul>
   </li>
   </ul>
@@ -61,7 +63,7 @@
         <div class="card-body">
           <h6 class="fw-semibold" style="color:#0a7a42;">Nursery Section</h6>
           <p class="small text-muted">A friendly environment where young children learn through play, stories, songs and guided activities.</p>
-          <a href="#" class="btn btn-sm text-white px-3" style="background:#0a7a42;">View Details</a>
+          <a href="#" class="btn btn-sm text-white px-3" style="background:#0a7a42;" data-bs-toggle="modal" data-bs-target="#nurseryModal">View Details</a>
         </div>
       </div>
     </div>
@@ -144,6 +146,42 @@
       <a href="#" class="btn btn-success btn-sm">Apply for Admission</a>
     </div>
   </div>
+  <!-- FAQs Accordion -->
+<section id="faqs" class="container my-5">
+  <h2 class="text-center text-primary fw-bold mb-4">Frequently Asked Questions</h2>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+          When do admissions start?
+        </button>
+      </h2>
+      <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">Admissions for Bright Future School are open from January to March every year.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+          What classes do you offer?
+        </button>
+      </h2>
+      <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">We offer Nursery to Primary 7, with computer lessons, sports and clubs.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+          How can I contact the school?
+        </button>
+      </h2>
+      <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">Visit our Contact page or call the school office. We are open Mon-Fri.</div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <footer class="bg-dark text-white text-center py-4" id="contact" style="scroll-margin-top: 80px;">
     <h5 class="fw-bold">Green Valley Academy</h5>
@@ -151,11 +189,38 @@
     <p class="mb-2 small">Phone: +256 700 000 000</p>
     <a href="#" class="text-warning small">Back to Top</a>
   </footer>
-
-
-
+  <!-- Nursery Modal -->
+<div class="modal fade" id="nurseryModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header text-white" style="background: #0a7a42;">
+        <h5 class="modal-title fw-bold">Nursery Section - Green Valley Academy</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="im1.jpeg" class="img-fluid rounded mb-3" style="height:180px; width:100%; object-fit:cover;">
+        <p><strong>Ages:</strong> 3 - 5 Years | <strong>Time:</strong> 8:00 AM - 12:30 PM</p>
+        <p class="small text-muted">A friendly environment where young children learn through play, stories, songs and guided activities.</p>
+      <div class="d-flex justify-content-center">
+        <ul class="text-center">
+          <li>Play and learning games</li>
+          <li>Early reading & writing</li>
+          <li>Numbers, drawing & songs</li>
+          <li>Safe and caring teachers</li>
+        </ul>
+      </div>
+        <p class="fw-bold" style="color:#0a7a42;">Fees: UGX 350,000 per term</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+        <a href="admissions.html" class="btn btn-sm text-white px-3" style="background:#0a7a42;">Apply Now</a>
+      </div>
+    </div>
   </div>
 </div>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
