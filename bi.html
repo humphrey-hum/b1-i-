@@ -10,43 +10,38 @@
 <body>
   <nav class="navbar sticky-top">
         <a class="navbar-brand fw-bold text-success" href="#">Green Valley Academy</a>
-         <ul class="navbar-nav d-flex flex-row gap-2">
-           <li class="nav-item"><a class="nav-link text-primary fw-bold" href="bi.html">Home</a></li>
-           <li class="nav-item"><a class="nav-link text-primary" href="#about">About</a></li>
-           <li class="nav-item"><a class="nav-link text-primary" href="#programs">Programs</a></li>
-           <li class="nav-item"><a class="nav-link text-primary" href="contacts.html">Contact</a></li>
-
-       <li class="nav-item dropdown position-relative">
-        <a class="nav-link dropdown-toggle text-primary" href="#" data-bs-toggle="dropdown">More</a>
-          <ul class="dropdown-menu dropdown-menu-end border-0 shadow position-absolute">
-          <li><a class="dropdown-item" href="admissions.html">Admissions</a></li>
-          <li><a class="dropdown-item" href="#">School Calender</a></li>
-          <li><a class="dropdown-item" href="#">Student Portal</a></li>
-          <li><a class="dropdown-item" href="#faqs">FAQs</a></li>
-
-        </ul>
-  </li>
-  </ul>
-</nav>
-    <div class="container-fluid p-0">
-    <section class="background py-5 text-white text-center">
-         <span class="badge bg-warning text-dark px-1 py-1">Admissions Open</span>
+          <ul class="navbar-nav d-flex flex-row gap-2">
+             <li class="nav-item"><a class="nav-link text-primary fw-bold" href="bi.html">Home</a></li>
+             <li class="nav-item"><a class="nav-link text-primary" href="#about">About</a></li>
+             <li class="nav-item"><a class="nav-link text-primary" href="#programs">Programs</a></li>
+             <li class="nav-item"><a class="nav-link text-primary" href="contacts.html">Contact</a></li>
+             <li class="nav-item dropdown position-relative">
+                 <a class="nav-link dropdown-toggle text-primary" href="#" data-bs-toggle="dropdown">More</a>
+              <ul class="dropdown-menu dropdown-menu-end border-0 shadow position-absolute">
+                 <li><a class="dropdown-item" href="admissions.html">Admissions</a></li>
+                 <li><a class="dropdown-item" href="#">School Calender</a></li>
+                 <li><a class="dropdown-item" href="#">Student Portal</a></li>
+                 <li><a class="dropdown-item" href="#faqs">FAQs</a></li>
+              </ul>
+          </ul>
+  </nav>
+    <div class="container-fluid">
+    <section class="background py-5 text-white text-center d-flex flex-column justify-content-center align-items-center">
+      <span class="badge bg-warning text-dark px-1 py-1">Admissions Open</span>
            <h1>Learning Today,Leading Tomorrow</h1>
            <p>Green Valley Academy provides quality education,discipline and practical skills for young learners.</p>
            <a href="#" class="btn btn-success mt-1 px-1 py-1">Explore Programs</a>
     </section>
-                     
-
+              
     <div style="display:flex; padding:20px; gap:30px;">
-  <img src="b2im.jpeg" style="width:350px;">
-  
-  <div>
-    <h2 class="pt-4 text-success" id="about">About Our School</h2>
-    <p>Green Valley Academy is a modern learning institution focused on academic excellence,creativity, discipline and character development.</p>
-    <p>Our teachers help students discover their strength throug classroom learning, practical activities, sports and technology.</p>
-    <a href="#" class="btn btn-outline-success px-4 rounded-3">Read More</a>
-  </div>
-</div>
+      <img src="b2im.jpeg" style="width:350px;">
+        <div>
+          <h2 class="pt-4 text-success" id="about">About Our School</h2>
+          <p>Green Valley Academy is a modern learning institution focused on academic excellence,creativity, discipline and character development.</p>
+          <p>Our teachers help students discover their strength throug classroom learning, practical activities, sports and technology.</p>
+          <a href="#" class="btn btn-outline-success px-4 rounded-3">Read More</a>
+        </div>
+    </div>
 
 
 <div class="container py-5">
@@ -146,6 +141,31 @@
       <a href="#" class="btn btn-success btn-sm">Apply for Admission</a>
     </div>
   </div>
+
+<div id="schoolCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="im1.jpeg" class="d-block w-100" style="height:400px; object-fit:cover;">
+      <div class="carousel-caption">
+        <h5>Green Valley Academy</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="im2.jpeg" class="d-block w-100" style="height:400px; object-fit:cover;">
+    </div>
+    <div class="carousel-item">
+      <img src="im3.jpeg" class="d-block w-100" style="height:400px; object-fit:cover;">
+    </div>
+  </div>
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#schoolCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#schoolCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
   <!-- FAQs Accordion -->
 <section id="faqs" class="container my-5">
   <h2 class="text-center text-primary fw-bold mb-4">Frequently Asked Questions</h2>
