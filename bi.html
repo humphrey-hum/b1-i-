@@ -1,246 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="bi.css">
-    <title>EDUCATION</title>
-</head>
-<body>
-  <nav class="navbar sticky-top">
-        <a class="navbar-brand fw-bold text-success" href="#">Green Valley Academy</a>
-          <ul class="navbar-nav d-flex flex-row gap-2">
-             <li class="nav-item"><a class="nav-link text-primary fw-bold" href="bi.html">Home</a></li>
-             <li class="nav-item"><a class="nav-link text-primary" href="#about">About</a></li>
-             <li class="nav-item"><a class="nav-link text-primary" href="#programs">Programs</a></li>
-             <li class="nav-item"><a class="nav-link text-primary" href="contacts.html">Contact</a></li>
-             <li class="nav-item dropdown position-relative">
-                 <a class="nav-link dropdown-toggle text-primary" href="#" data-bs-toggle="dropdown">More</a>
-              <ul class="dropdown-menu dropdown-menu-end border-0 shadow position-absolute">
-                 <li><a class="dropdown-item" href="admissions.html">Admissions</a></li>
-                 <li><a class="dropdown-item" href="#">School Calender</a></li>
-                 <li><a class="dropdown-item" href="#">Student Portal</a></li>
-                 <li><a class="dropdown-item" href="#faqs">FAQs</a></li>
-              </ul>
-          </ul>
-  </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <link rel="stylesheet" href="bi.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+         <title>EDUCATION</title>
+    </head>
+    <body>
+        <!-- navigation bar -->
+         <nav class="navbar navbar-expand-lg glass-nav red-glass bg-danger fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">Green Valley Academy</a>
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="bi.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+            
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="admissions.html">Admissions</a></li>
+                        <li><a class="dropdown-item" href="#">News</a></li>
+                        <li><a class="dropdown-item" href="#">Careers</a></li>
+                        <li><a class="dropdown-item" href="#faqs">FAQs</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- hero section -->
+        <div class="hero-image d-flex justify-content-center align-items-center">
+            <div class="hero-text text-center">
+                <span class="badge bg-danger">Admissions Open</span>
+                <h1 class="display-3 fw-bold text-warning">Learning Today,Leading Tomorrow</h1>
+                <p class="text-white">Green Valley Academy provides quality education,discipline and practical skills for young learners.</p>
+                <a href="#" class="btn btn-success btn-sm">Explore Programs</a>
+            </div>
+        </div>
+
+        <!-- About us -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 pt-5">
+                    <img src="b2im.jpeg" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2 id="about">Green Valley Academy</h2>
+                    <p>Green Valley Academy is a modern learning institution focused on academic excellence,creativity, discipline and
+                     character development.</p>
+                    <p>Our teachers help students discover their strength throug classroom learning, practical activities, sports and
+                     technology.</p>
+                    <a href="#" class="btn btn-success btn-sm">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- programs -->
+        <div class="container pt-5">
+            <div class="row">
+                <div class="text-center">
+                    <h2 id="programs">Our Learning Programs</h2>
+                    <p>We support learners at different levels of education.</p>
+                </div>
+            <!-- card 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="im1.jpeg" class="card-img-top">
+                        <div class="card-body">
+                            <h2>Nursery Section</h2>
+                            <p>A friendly environment where young children learn through play, stories, songs
+                             and guided activities.</p>
+                            <a href="#" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#nurseryModal">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="im2.jpeg" class="card-img-top">
+                        <div class="card-body">
+                            <h2>Primary Section</h2>
+                            <p>Strong academic foundation in English, Mathematics, Science, Social Studies and
+                              practical skills.</p>
+                            <a href="#" class="btn btn-success btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="im3.jpeg" class="card-img-top">
+                        <div class="card-body">
+                            <h2>Drums & Vocalists</h2>
+                            <p>Students learn basic computer use, typing, internet safety and beginner coding.</p>
+                            <span class="spinner-border spinner-border-sm me-2 text-success"></span>
+                            <span class="text-muted ms-1">Enrollment ongoing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- carousel -->
+        <div id="schoolCarousel" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="im1.jpeg" class="d-block w-50 mx-auto" alt="slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="im2.jpeg" class="d-block w-50 mx-auto" alt="slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="im3.jpeg" class="d-block w-50 mx-auto" alt="slide 3">
+                    </div>
+                </div>
+        <!-- close carousel-inner -->
+
+            <!-- Dots at bottom -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#schoolCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#schoolCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#schoolCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- Arrows at sides - THIS IS WHAT YOU WANT -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#schoolCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#schoolCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+     </div>
+<!-- close schoolCarousel -->
+            
+        
+
+        <!-- ratings -->
+        <div class="container">
+            <div class="row g-3 text-center pt-4">
+
+                <div class="col-3">
+                <div class="bg-light border rounded">
+                        <h2>25+</h2>
+                        <p>Qualified Teachers</p>
+                </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="bg-success border rounded">
+                        <h2>800+</h2>
+                        <p>Active Members</p>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="bg-warning border rounded">
+                        <h2>03</h2>
+                        <p>School Cliubs</p>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="bg-primary border rounded">
+                        <h2>98%</h2>
+                        <p>Parent Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Admission Updates -->
+        <div class="container p-4">
+            <div class="bg-light shadow-sm">
+                <h2>Admission Updates</h2>
+                <p>Applications are currently open for sessions and parents are encouraged to contact the institution for guidance</p>
+                
+                <div class="progress mb-2" role="progressbar">
+                    <div class="progress-bar progress-bar-striped" style="width: 20%">20%</div>
+                </div>
+                <div class="progress mb-2" role="progressbar">
+                    <div class="progress-bar progress-bar-striped" style="width: 50%">50%</div>
+                </div>
+                <div class="progress mb-2" role="progressbar">
+                    <div class="progress-bar progress-bar-striped" style="width: 70%">70%</div>
+                </div>
+                <div class="progress mb-2" role="progressbar">
+                    <div class="progress-bar progress-bar-striped" style="width: 100%">100%</div>
+                </div>
+                <a href="#" class="btn btn-success btn-sm">Apply for Admission</a>
+            </div>
+        </div>
+
+              <!-- Nursery Modal -->
+          <div class="modal fade" id="nurseryModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header text-white" style="background: #0a7a42;">
+                  <h5 class="modal-title fw-bold">Nursery Section - Green Valley Academy</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="im1.jpeg" class="img-fluid rounded mb-3"
+                    style="height:180px; width:100%; object-fit:cover;">
+                  <p><strong>Ages:</strong> 3 - 5 Years | <strong>Time:</strong> 8:00 AM - 12:30 PM</p>
+                  <p class="small text-muted">A friendly environment where young children learn through play, stories,
+                    songs and guided activities.</p>
+                  <div class="d-flex justify-content-center">
+                    <ul class="text-center">
+                      <li>Play and learning games</li>
+                      <li>Early reading & writing</li>
+                      <li>Numbers, drawing & songs</li>
+                      <li>Safe and caring teachers</li>
+                    </ul>
+                  </div>
+                  <p class="fw-bold" style="color:#0a7a42;">Fees: UGX 350,000 per term</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                  <a href="admissions.html" class="btn btn-sm text-white px-3" style="background:#0a7a42;">Apply Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+            
+        <!-- FAQS Accordion -->
+            <div class="container p-4">
+                <h2 class="text-center text-primary fw-bold mb-4">Frequently Asked Questions</h2>
+                <div class="accordion" id="faqs">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">When do admissions start</button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Admissions are open from January to December every year.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- item 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">What Sessions do you offer?</button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We offer Piano session, Guitar sessions and Vocal sessions
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- item 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">How can I contact the school</button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Visit our contact page on the website or call the school office
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- off canvas -->
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demoOffcanvas">
+                Open Panel
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="demoOffcanvas">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <p>Your content here</p>
+                </div>
+            </div>
+
+    <!-- footer -->
     <div class="container-fluid">
-    <section class="background py-5 text-white text-center d-flex flex-column justify-content-center align-items-center">
-      <span class="badge bg-warning text-dark px-1 py-1">Admissions Open</span>
-           <h1>Learning Today,Leading Tomorrow</h1>
-           <p>Green Valley Academy provides quality education,discipline and practical skills for young learners.</p>
-           <a href="#" class="btn btn-success mt-1 px-1 py-1">Explore Programs</a>
-    </section>
-              
-    <div style="display:flex; padding:20px; gap:30px;">
-      <img src="b2im.jpeg" style="width:350px;">
-        <div>
-          <h2 class="pt-4 text-success" id="about">About Our School</h2>
-          <p>Green Valley Academy is a modern learning institution focused on academic excellence,creativity, discipline and character development.</p>
-          <p>Our teachers help students discover their strength throug classroom learning, practical activities, sports and technology.</p>
-          <a href="#" class="btn btn-outline-success px-4 rounded-3">Read More</a>
+        <div class="bg-dark text-center text-white">
+            <h2>Noble Class Music</h2>
+            <p>Email: info@nobleclassmusic.com</p>
+            <p>Phone:+256786786331</p>
+            <a href="#" class="text-warning">Back to Top</a>
         </div>
     </div>
-
-
-<div class="container py-5">
-  <div class="text-center mb-4">
-    <h4 class="fw-bold" style="color:#0a7a42;" id="programs">Our Learning Programs</h4>
-    <p class="text-muted small">We support learners at different levels of education.</p>
-  </div>
-
-  <div class="row g-4">
-    <!-- Nursery -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="card h-100 border-0 shadow-sm rounded-3">
-        <img src="im1.jpeg" class="card-img-top rounded-top-3" alt="Nursery" style="height:180px; object-fit:cover;">
-        <div class="card-body">
-          <h6 class="fw-semibold" style="color:#0a7a42;">Nursery Section</h6>
-          <p class="small text-muted">A friendly environment where young children learn through play, stories, songs and guided activities.</p>
-          <a href="#" class="btn btn-sm text-white px-3" style="background:#0a7a42;" data-bs-toggle="modal" data-bs-target="#nurseryModal">View Details</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Primary - green border -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="card h-100 shadow-sm rounded-3" style="border:1.5px solid #0a7a42;">
-        <img src="im2.jpeg" class="card-img-top rounded-top-3" alt="Primary" style="height:180px; object-fit:cover;">
-        <div class="card-body">
-          <h6 class="fw-semibold" style="color:#0a7a42;">Primary Section</h6>
-          <p class="small text-muted">Strong academic foundation in English, Mathematics, Science, Social Studies and practical skills.</p>
-          <a href="#" class="btn btn-sm btn-outline-success px-3">Learn More</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Computer - New badge -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="card h-100 border-0 shadow-sm rounded-3">
-        <div class="position-relative">
-          <img src="im3.jpeg" class="card-img-top rounded-top-3" alt="Computer" style="height:180px; object-fit:cover;">
-          <span class="badge bg-danger position-absolute top-0 end-0 m-2" style="font-size:10px;">New</span>
-        </div>
-        <div class="card-body">
-          <h6 class="fw-semibold" style="color:#0a7a42;">Computer Lessons</h6>
-          <p class="small text-muted">Students learn basic computer use, typing, internet safety and beginner coding.</p>
-          <p class="small mb-0 d-flex align-items-center">
-            <span class="spinner-border spinner-border-sm me-2 text-success" role="status"></span>
-            <span class="text-muted ms-1">Enrollment ongoing</span>
-          </p>
-        </div>
-      </div>
-    </div>
-
-   <div class="container">
-  <div class="row g-3 pt-5 text-center">
-
-    <div class="col-3">
-      <div class="p-3 bg-light border rounded">
-        <h3>25+</h3>
-        <p>Qualified Teachers</p>
-      </div>
-    </div>
-
-    <div class="col-3">
-      <div class="p-3 bg-success text-white rounded">
-        <h3>800+</h3>
-        <p>Active Students</p>
-      </div>
-    </div>
-
-    <div class="col-3">
-      <div class="p-3 bg-warning rounded">
-        <h3>15</h3>
-        <p>School Clubs</p>
-      </div>
-    </div>
-
-    <div class="col-3">
-      <div class="p-3 bg-primary text-white rounded">
-        <h3>98%</h3>
-        <p>Parent Satisfaction</p>
-      </div>
-    </div>
-
-  <div class="container text-start">
-    <div class="bg-white p-4 rounded shadow-sm">
-      <h5 class="text-success fw-bold">Admission Updates</h5>
-      <p class="small">
-        Applications are currently open for nursery and primary classes. Parents are encouraged to visit the school office for guidance.
-      </p>
-
-      
-      <div class="placeholder-glow">
-        <div class="placeholder col-7" ></div>
-        <div class="placeholder col-5"></div>
-        <div class="placeholder col-10"></div>
-      </div>
-
-      <a href="#" class="btn btn-success btn-sm">Apply for Admission</a>
-    </div>
-  </div>
-
-<div id="schoolCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="im1.jpeg" class="d-block w-100" style="height:400px; object-fit:cover;">
-      <div class="carousel-caption">
-        <h5>Green Valley Academy</h5>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="im2.jpeg" class="d-block w-100" style="height:400px; object-fit:cover;">
-    </div>
-    <div class="carousel-item">
-      <img src="im3.jpeg" class="d-block w-100" style="height:400px; object-fit:cover;">
-    </div>
-  </div>
-  
-  <button class="carousel-control-prev" type="button" data-bs-target="#schoolCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#schoolCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div>
-
-  <!-- FAQs Accordion -->
-<section id="faqs" class="container my-5">
-  <h2 class="text-center text-primary fw-bold mb-4">Frequently Asked Questions</h2>
-  <div class="accordion" id="faqAccordion">
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-          When do admissions start?
-        </button>
-      </h2>
-      <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">Admissions for Bright Future School are open from January to March every year.</div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-          What classes do you offer?
-        </button>
-      </h2>
-      <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">We offer Nursery to Primary 7, with computer lessons, sports and clubs.</div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-          How can I contact the school?
-        </button>
-      </h2>
-      <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">Visit our Contact page or call the school office. We are open Mon-Fri.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <footer class="bg-dark text-white text-center py-4" id="contact" style="scroll-margin-top: 80px;">
-    <h5 class="fw-bold">Green Valley Academy</h5>
-    <p class="mb-1 small">Email: info@greenvalleyacademy.com</p>
-    <p class="mb-2 small">Phone: +256 700 000 000</p>
-    <a href="#" class="text-warning small">Back to Top</a>
-  </footer>
-  <!-- Nursery Modal -->
-<div class="modal fade" id="nurseryModal" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header text-white" style="background: #0a7a42;">
-        <h5 class="modal-title fw-bold">Nursery Section - Green Valley Academy</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <img src="im1.jpeg" class="img-fluid rounded mb-3" style="height:180px; width:100%; object-fit:cover;">
-        <p><strong>Ages:</strong> 3 - 5 Years | <strong>Time:</strong> 8:00 AM - 12:30 PM</p>
-        <p class="small text-muted">A friendly environment where young children learn through play, stories, songs and guided activities.</p>
-      <div class="d-flex justify-content-center">
-        <ul class="text-center">
-          <li>Play and learning games</li>
-          <li>Early reading & writing</li>
-          <li>Numbers, drawing & songs</li>
-          <li>Safe and caring teachers</li>
-        </ul>
-      </div>
-        <p class="fw-bold" style="color:#0a7a42;">Fees: UGX 350,000 per term</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
-        <a href="admissions.html" class="btn btn-sm text-white px-3" style="background:#0a7a42;">Apply Now</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
+        
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+
+    <script>
+        
+    </script>
+    </body>
+    </html>
