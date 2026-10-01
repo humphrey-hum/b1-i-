@@ -9,26 +9,40 @@
     </head>
     <body>
         <!-- navigation bar -->
-         <nav class="navbar navbar-expand-lg glass-nav red-glass bg-danger fixed-top">
+         <nav class="navbar navbar-expand-lg bg-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand fw-bold" href="#">Green Valley Academy</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-control="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+                <a class="navbar-brand fw-bold text-warning">Green Valley Academy</a>
             </div>
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link active" href="bi.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
-            
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="admissions.html">Admissions</a></li>
-                        <li><a class="dropdown-item" href="#">News</a></li>
-                        <li><a class="dropdown-item" href="#">Careers</a></li>
-                        <li><a class="dropdown-item" href="#faqs">FAQs</a></li>
-                    </ul>
-                </li>
-            </ul>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active text-primary" href="bi.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary" href="#programs">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary" href="contacts.html">Contact</a></li>
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-primary dropdown-toggle" data-bs-toggle="dropdown">More</a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="admissions.html">Admissions</a></li>
+                            <li><a class="dropdown-item" href="#">News</a></li>
+                            <li><a class="dropdown-item" href="#">Careers</a></li>
+                            <li><a class="dropdown-item" href="#faqs">FAQs</a></li>
+                        </ul>
+                    </li>
+              </ul>
+            </div>
         </nav>
 
         <!-- hero section -->
@@ -118,7 +132,7 @@
                         <img src="im3.jpeg" class="d-block w-50 mx-auto" alt="slide 3">
                     </div>
                 </div>
-        <!-- close carousel-inner -->
+        
 
             <!-- Dots at bottom -->
             <div class="carousel-indicators">
@@ -127,7 +141,7 @@
                 <button type="button" data-bs-target="#schoolCarousel" data-bs-slide-to="2"></button>
             </div>
 
-            <!-- Arrows at sides - THIS IS WHAT YOU WANT -->
+            <!-- Arrows at sides - -->
             <button class="carousel-control-prev" type="button" data-bs-target="#schoolCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </button>
@@ -135,7 +149,6 @@
                 <span class="carousel-control-next-icon"></span>
             </button>
      </div>
-<!-- close schoolCarousel -->
             
         
 
@@ -289,9 +302,9 @@
 
     <!-- footer -->
     <div class="container-fluid">
-        <div class="bg-dark text-center text-white">
-            <h2>Noble Class Music</h2>
-            <p>Email: info@nobleclassmusic.com</p>
+        <div class="bg-dark text-center text-white pt-2 pb-2">
+            <h2>Green Valley Academy</h2>
+            <p>Email: info@greenvalley.com</p>
             <p>Phone:+256786786331</p>
             <a href="#" class="text-warning">Back to Top</a>
         </div>
