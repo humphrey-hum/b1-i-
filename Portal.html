@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Student Portal</title>
+</head>
+<body class="bg-light">
+
+    <!-- navigation bar -->
+        <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+            <div class="container-fluid ps-5">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-control="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+                <a class="navbar-brand fw-bold text-warning">Green Valley Academy</a>
+            </div>
+
+            <div class="collapse navbar-collapse pe-5" id="mainNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active text-white" href="bi.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#programs">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contacts.html">Contact</a></li>
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown">More</a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="admissions.html">Admissions</a></li>
+                            <li><a class="dropdown-item" href="#">News</a></li>
+                            <li><a class="dropdown-item" href="Portal.html">Students Portal</a></li>
+                            <li><a class="dropdown-item" href="#faqs">FAQs</a></li>
+                        </ul>
+                    </li>
+              </ul>
+            </div>
+        </nav>
+
+<!-- GREEN HEADER -->
+<div class="bg-success text-white p-5 mt-4">
+  <div class="container">
+    <h1 class="fw-bold">Student Portal</h1>
+    <p class="mb-3">Your courses, assignments and learning progress in one place.</p>
+    <button class="btn btn-light btn-sm fw-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#studentMenu">
+      Open student menu
+    </button>
+  </div>
+</div>
+
+<!-- OFFCANVAS MENU -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="studentMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title fw-bold">Student Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action active">Dashboard</a>
+      <a href="#" class="list-group-item list-group-item-action">My courses</a>
+      <a href="#" class="list-group-item list-group-item-action">Assignments</a>
+      <a href="#" class="list-group-item list-group-item-action">My progress</a>
+      <a href="#" class="list-group-item list-group-item-action">Profile</a>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container my-4">
+  <p class="text-muted small">Classroom demonstration with sample student information</p>
+  
+  <div class="row g-4">
+    <!-- MY COURSES -->
+    <div class="col-lg-8">
+      <div class="card shadow-sm border-0 h-100">
+        <div class="card-body">
+          <h5 class="fw-bold">My courses</h5>
+          <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
+            <span>HTML</span>
+            <span class="badge bg-success">Complete</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
+            <span>CSS</span>
+            <span class="badge bg-success">Complete</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center py-2">
+            <span>Bootstrap</span>
+            <span class="badge bg-primary">In progress</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ASSIGNMENTS -->
+    <div class="col-lg-4">
+      <div class="card shadow-sm border-0 h-100">
+        <div class="card-body">
+          <h5 class="fw-bold">Assignments</h5>
+          <p class="fw-bold mb-1 small">Build a school website</p>
+          <p class="text-muted small">Include a responsive navbar, three course cards and footer with an offcanvas menu.</p>
+          <span class="badge bg-warning text-dark">Practice task</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MY PROGRESS -->
+    <div class="col-12">
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="fw-bold">My progress</h5>
+          <p class="small mb-2">Bootstrap exercises completed</p>
+          <div class="progress mb-3" style="height: 22px;">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 70%;">70%</div>
+          </div>
+          <p class="small text-muted mb-0">Complete the offcanvas exercise to practise your next skill.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- table -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+         <table class="table table-bordered table-striped" >
+        <tr>
+            <th>Subject</th>
+            <th>Marks</th> 
+        </tr>
+        <tr>
+            <td>Mathematics</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>Physics</td>
+            <td>80%</td>
+        </tr>
+        <tr>
+            <td>Chemistry</td>
+            <td>70%</td>
+        </tr>
+        <tr>
+            <td>Biology</td>
+            <td>50%</td>
+        </tr>
+   </table>   
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3 mt-4 small">
+  Green Valley Academy | Student Learning Portal
+</footer>
+
+
+   
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
